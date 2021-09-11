@@ -10,6 +10,7 @@ public class LoggingAspect {
 
     @Before("execution(public void getBook())")
     public void beforeGetBookAdvice() {
-        System.out.println("beforeGetBookAdvice: попытка получить книгу");
+        System.out.println("beforeGetBookAdvice: trying to get a book");
     }
+
 }
