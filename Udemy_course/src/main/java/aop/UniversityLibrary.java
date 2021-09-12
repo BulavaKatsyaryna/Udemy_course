@@ -10,4 +10,12 @@ public class UniversityLibrary extends AbstractLibrary{
         System.out.println("Getting a book from UniversityLibrary");
     }
 
+    public String returnBook() {
+        System.out.println("Returning the book to UniversityLibrary");
+        return "OK";
+    }
+
+    public void getMagazine() {
+        System.out.println("Getting a magazine from UniversityLibrary");
+    }
 }
