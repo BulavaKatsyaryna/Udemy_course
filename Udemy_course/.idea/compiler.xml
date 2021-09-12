@@ -10,6 +10,9 @@
         <module name="Udemy_course" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Udemy_course" target="15" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
