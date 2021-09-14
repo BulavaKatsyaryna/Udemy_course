@@ -1,4 +1,4 @@
-package aop.aspects;
+package aop;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
