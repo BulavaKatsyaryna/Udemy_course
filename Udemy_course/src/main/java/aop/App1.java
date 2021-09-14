@@ -12,8 +12,9 @@ public class App1 {
 //        Book book = ctx.getBean("book", Book.class);
 
         universityLibrary.getBook();
-//        universityLibrary.returnBook();
+        universityLibrary.returnBook();
         universityLibrary.getMagazine();
+        universityLibrary.addBook();
 
 //        SchoolLibrary schoolLibrary = ctx.getBean("schoolLibrary", SchoolLibrary.class);
 //        schoolLibrary.getBook();
