@@ -9,13 +9,14 @@ public class App1 {
                 new AnnotationConfigApplicationContext(MyConfig.class);
 
         UniversityLibrary universityLibrary = ctx.getBean("universityLibrary", UniversityLibrary.class);
-//        Book book = ctx.getBean("book", Book.class);
+        Book book = ctx.getBean("book", Book.class);
 
         universityLibrary.getBook();
 //        universityLibrary.returnBook();
-        universityLibrary.getMagazine();
-//        universityLibrary.addBook();
+//        universityLibrary.getMagazine();
+        universityLibrary.addBook("Kate", book);
 //        universityLibrary.returnMagazine();
+        universityLibrary.addMagazine();
 
 //        SchoolLibrary schoolLibrary = ctx.getBean("schoolLibrary", SchoolLibrary.class);
 //        schoolLibrary.getBook();
