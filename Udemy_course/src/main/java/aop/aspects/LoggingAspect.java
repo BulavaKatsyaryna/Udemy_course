@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 @Order(10)
 public class LoggingAspect {
 
-    @Before("aop.aspects.MyPointcut.allGetMethod()")
-    public void beforeGetLoggingAdvice() {
+    @Before("aop.aspects.MyPointcut.allAddMethod()")
+    public void beforeAddLoggingAdvice() {
         System.out.println("beforeGetLoggingAdvice: logging attempts to get a book / magazine");
     }
 

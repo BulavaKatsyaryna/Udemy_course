@@ -14,4 +14,10 @@ public class Book {
 
     @Value("Harry Potter and the Philosopher's Stone")
     private String name;
+
+    @Value("J. K. Rowling")
+    private String author;
+
+    @Value("1997")
+    private int yearsOfPublication;
 }
