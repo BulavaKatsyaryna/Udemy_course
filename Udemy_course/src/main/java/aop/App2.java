@@ -11,8 +11,13 @@ public class App2 {
 
         University university = ctx.getBean("university", University.class);
         university.addStudents();
-        List<Student> students = university.getStudents();
-        System.out.println(students);
+        try {
+            List<Student> students = university.getStudents();
+            System.out.println(students);
+        }
+        catch (Exception e) {
+            System.out.println("An exception was caught " + e);
+        }
 
         ctx.close();
     }
