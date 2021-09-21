@@ -22,7 +22,7 @@ public class University {
 
     public List<Student> getStudents() {
         System.out.println("Method getStudents start");
-        System.out.println(students.get(3));
+//        System.out.println(students.get(3));
         System.out.println("Information from method student: ");
         System.out.println(students);
         return students;

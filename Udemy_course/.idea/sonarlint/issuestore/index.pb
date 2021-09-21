@@ -19,3 +19,5 @@ K
 src/main/java/aop/Book.java,d\a\da1c964ccf3f92841ae614bb1f93276f14e2212b
 O
 src/main/java/aop/MyConfig.java,4\e\4ea327e7f686ee9ce83e00772cab433eaf5586c4
+Y
+)src/main/java/aop/aspects/MyPointcut.java,f\c\fc54238fd18d3280e9d7f25ae4686d1cb31f9a51
