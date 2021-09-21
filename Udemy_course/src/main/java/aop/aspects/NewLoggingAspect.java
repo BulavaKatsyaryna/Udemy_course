@@ -10,12 +10,14 @@ import org.springframework.stereotype.Component;
 public class NewLoggingAspect {
 
     @Around("execution(public String returnBook())")
-    public String aroundReturnBookLoggingAdvice(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+    public Object aroundReturnBookLoggingAdvice(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
 
         System.out.println("aroundReturnBookLoggingAdvice: Trying to return a book to the library");
 
-        proceedingJoinPoint.proceed();
+        Object targetMethodResult = proceedingJoinPoint.proceed();
 
         System.out.println("aroundReturnBookLoggingAdvice: The book was successfully returned to the library");
+
+        return targetMethodResult;
     }
 }
