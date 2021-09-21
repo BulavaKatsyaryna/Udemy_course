@@ -20,7 +20,7 @@ public class NewLoggingAspect {
             targetMethodResult = proceedingJoinPoint.proceed();
         } catch (Exception e) {
             System.out.println("aroundReturnBookLoggingAdvice: An exception was caught - " + e);
-            targetMethodResult = "Book title unknown";
+            throw e;
         }
 
         System.out.println("aroundReturnBookLoggingAdvice: The book was successfully returned to the library");
